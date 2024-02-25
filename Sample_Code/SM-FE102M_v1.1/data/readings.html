@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+h1 {
+font-family:Arial;
+  text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color:rgba(71, 209, 255, 0.553);
+    color:MidnightBlue;
+  
+}
+
+h2 {
+
+  font-family:Arial;
+}
+
+h3 {
+  text-align: center;
+  font-family:Arial;
+}
+
+  <meta charset="utf-8">
+  <title>SM-Energy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="description" content="SMEnergy">
+  <meta name="author" content="SMEnergy">
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  
+</style>
+</head>  
+
+    
+<body>
+
+    <div class="topnav">
+      <h1>SM<span>Energy</span></h1>
+      <h3>WiFi SM-Energy Link for SM-FE102M Energy Meters </h3>
+    </div>
+    
+      <style>
+		table, th, td {
+  		border:2px solid black;
+		}
+		</style>
+
+
+        <h2>3. Meter Readings</h2>
+       <table style="width:80%">
+  <tr>
+    <th>Meter Parameter</th>
+    <th>Current Reading</th>
+
+
+  </tr>
+  
+    <tr>
+    <td><b>Voltage RMS</b></td>
+    <td><span id="vrms"></span>V</td>
+  	</tr>
+    
+    <tr>
+    <td><b>L-Line Current RMS</b></td>
+    <td><span id="Lcurrentrms"></span>A</td>
+  	</tr>
+    
+    <tr>
+    <td><b>N-Line Current RMS</b></td>
+    <td><span id="Ncurrentrms"></span>A</td>
+  	</tr>
+    
+    <tr>
+    <td><b>Frequency</b></td>
+    <td><span id="frequency"></span>Hz</td>
+  	</tr>
+    
+    <tr>
+    <td><b>L-Line Power Factor</b></td>
+    <td><span id="Lpwrfactor"></span></td>
+  	</tr>
+    
+    <tr>
+    <td><b>Phase Angle between Voltage and L-Line Current</b></td>
+    <td><span id="phangVandL"></span>&deg;</td>
+  	</tr>
+    
+    <tr>
+    <td><b>N-Line Power Factor</b></td>
+    <td><span id="Npwrfactor"></span></td>
+  	</tr>
+    
+    <tr>
+    <td><b>Phase Angle between Voltage and N-Line Current</b></td>
+    <td><span id="phangVandN"></span>&deg;</td>
+  	</tr>
+    
+    <tr>
+    <td><b>L-Line Mean Active Power</b></td>
+    <td><span id="Lactpwr"></span>W</td>
+  	</tr>
+    
+    <tr>
+    <td><b>L-Line Mean Reactive Power</b></td>
+    <td><span id="Lreactpwr"></span>Var</td>
+  	</tr>
+    
+    <tr>
+    <td><b>L-Line Mean Apparent Power</b></td>
+    <td><span id="Lapptpwr"></span>VA</td>
+  	</tr>
+       
+    <tr>
+    <td><b>N-Line Mean Active Power</b></td>
+    <td><span id="Nactpwr"></span>W</td>
+  	</tr>
+    
+        <tr>
+    <td><b>N-Line Mean Reactive Power</b></td>
+    <td><span id="Nreactpwr"></span>Var</td>
+  	</tr>
+    
+    <tr>
+    <td><b>N-Line Mean Apparent Power</b></td>
+    <td><span id="Napptpwr"></span>VA</td>
+  	</tr>
+    
+        <tr>
+    <td><b>Forward Active Energy</b></td>
+    <td><span id="fwrdactengy"></span>kWh</td>
+  	</tr>
+    
+        <tr>
+    <td><b>Reverse Active Energy</b></td>
+    <td><span id="rvsactengy"></span>kWh</td>
+  	</tr>
+    
+        <tr>
+    <td><b>Absolute Active Energy</b></td>
+    <td><span id="absactengy"></span>kWh</td>
+  	</tr>
+    
+        <tr>
+    <td><b>Forward (Inductive) Reactive Energy</b></td>
+    <td><span id="fwrdreactengy"></span>KVarh</td>
+  	</tr>
+    
+            <tr>
+    <td><b>Reverse (Capacitive) Reactive Energy</b></td>
+    <td><span id="rvsreactengy"></span>KVarh</td>
+  	</tr>
+    
+            <tr>
+    <td><b>Absolute Reactive Energy</b></td>
+    <td><span id="absreactengy"></span>KVarh</td>
+  	</tr>
+    
+
+    </table>
+            
+
+<a href="index.html">
+    <button>Home</button>
+</a>
+            
+            
+       
+   
+    
+ 
+              <script src="script.js"></script>
+
+
+</body>
+</html>
+
+
