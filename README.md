@@ -4,8 +4,8 @@
 GTEM Overview
 ![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/blob/main/Pictures/IMG_4226.jpg?raw=true)
 
-GTEM 'What Is In The Shipping Box'
-![Display-Type-B](https://ditronix.net/wp-content/uploads/2023/07/GTEM-ESP32-ATM90E26-In-The-Box-scaled.jpg?raw=true)
+![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/blob/main/Pictures/IMG_4206.jpg?raw=true)
+![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/blob/main/Pictures/IMG_4207.jpg?raw=true)
 
 **DitroniX.net Power Energy Monitor Boards SDK Overview**
 ![Display-Type-B](https://ditronix.net/wp-content/uploads/2023/08/DitroniX.net-Power-Energy-Monitor-Boards-SDK-Overview-scaled.jpg?raw=true)
@@ -15,13 +15,13 @@ The SM Energy FE102M Energy Monitor has main features:
 
 ESP32 WROOM 32 -Wireless and Bluetooth
 ATM90E26 (Energy Monitor) Metering Features:
-Metering features fully in compliance with the requirements of IEC62052-11, IEC62053-21 and IEC62053-23.
+Metering features are fully in compliance with the requirements of IEC62052-11, IEC62053-21, and IEC62053-23.
 Interrupts connected to ESP32 Active Energy pulse interrupt, Reactive Energy pulse interrupt, WarnOut fault interrupt, Voltage/Current Zero Crossing interrupt.
 Accuracy of ±0.1% for active energy and ±0.2% for reactive energy over a dynamic range of 6000:1.
-Temperature coefficient is 6 ppm/ ℃ (typ.) for on-chip reference voltage. Automatically temperature compensated.
-Single-point calibration on each phase over the whole dynamic range for active energy; no calibration needed for reactive/ apparent energy. 
+The temperature coefficient is 6 ppm/ ℃ (typ.) for on-chip reference voltage. Automatically temperature compensated.
+Single-point calibration on each phase over the whole dynamic range for active energy; no calibration is needed for reactive/ apparent energy. 
 Flexible piece-wise non-linearity compensation: three current (RMS value)-based segments with two programmable thresholds for each phase. Independent gain and phase angle compensation for each segment. 
-Electrical parameters measurement: less than ±0.5% fiducial error for Vrms, Irms, mean active/ reactive/ apparent power, frequency, power factor and phase angle. 
+Electrical parameters measurement: less than ±0.5% fiducial error for Vrms, Irms, mean active/ reactive/ apparent power, frequency, power factor, and phase angle. 
 Active (forward/reverse), reactive (forward/reverse), apparent energy with independent energy registers. • Programmable startup and no-load power thresholds
 24C256 EEPROM (I2C)
 I2C 20X4 LCD Module 
@@ -36,28 +36,28 @@ Reset Button
 MODBUS Connectivity
 2 X User GPIO (SET and MODE User Programmable Button)
 Meter status LEDs and Power LED.
-Meter designed to Auto/Manual program and serial communication through USB interface. 
+Meter designed to Auto/Manual program and serial communication through a USB interface. 
 Size 150mm x 105mm x 35mm
     
 ![Display-Type-B](https://ditronix.net/wp-content/uploads/2023/01/GTEM-ESP32-ATM90E26-Enery-Monitor-Connections.jpg?raw=true)    
 
 Remember!
-- Our SDKs are ESP32 Dev module fully compatible with Arduino IDE
+- Our SDKs for the ESP32 Dev module are fully compatible with Arduino IDE
 - Set the BOARD to ESP32 Dev Module, 'WEMOS D1 MINI ESP32' DEV Module (or similar).
 - You can also set the BAUD rate to 921600 to speed up flashing.
 - The SDK does need external power to flash.  First, Connect the DC power 9-12V and Select the serial com port in Arduino.
 
-***You will need to provide external 12V DC for power up of the Energy Monitor functions.*
+***You will need to provide an external 12V DC to power up the Energy Monitor functions.*
 *You will need to provide a CT Current Clamp.  Ideally YHDC SCT-013-000***
 
-All test code is OPEN SOURCE and although is is not intended for real world use, it may be freely used, or modified as needed.  It is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+All test code is OPEN SOURCE and although it is not intended for real-world use, it may be freely used, or modified as needed.  It is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 See Example Code https://github.com/Chamil1983/FE102M-Energy-Monitor/tree/main/Sample_Code/
 
 
 ## **Further Information**
 
-Additional information, and other technical details on this project, maybe found in the related repository pages.
+Additional information, and other technical details on this project, may be found in the related repository pages.
 
 **Repository Folders**
 
@@ -73,9 +73,9 @@ Additional information, and other technical details on this project, maybe found
 
 ***
 
-We value our Customers, Users of our designs and STEM Communities, all over the World . Should you have any other questions, or feedback to share to others, please feel free to:
+We value our Customers, Users of our designs, and STEM Communities, all over the World. Should you have any other questions, or feedback to share with others, please feel free to:
 
-***Chamil Vithanage, Microcode Embedded Soloutions, Australia.***
+***Chamil Vithanage, Microcode Embedded Solutions, Australia.***
 
 Electronics Engineer | Software Developer | R&D Support | RF Engineering | Product Certification and Testing 
 
