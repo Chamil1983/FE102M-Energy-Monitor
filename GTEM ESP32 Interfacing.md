@@ -8,27 +8,24 @@ The ESP 32 interfaces to the ATM90E26 via either:
 - SPI
 - UART (connected to ESP32 UART2)
 
-*This is user selectable using J3 and SW5 Com Mode Selector Switch  on the FE102M Main board.  By default, SPI is selected.*
+*This is user-selectable using J3 and SW5 Com Mode Selector Switch  on the FE102M Mainboard.  By default, SPI is selected.*
 
 The ESP32 interfaces to the AT24C256 EEPROM via I2C.  It has an address of 0x50
 
-Flashing and Debugging connection to the ESP32, is via the USB UART (CP2102N).
+The flashing and Debugging connection to the ESP32 is via the USB UART (CP2102N).
 
-**Pads**
-
-The GTEM board has a number of solder pads on the bottom.
 
 Default settings:
 - **SPI** ATM90E26 Interface Enabled from **J3 and SW5**
 - **Metering Mode L+N** 
 - **CT** Clamp **Burden** Resistor **Enabled**
-- **SPI Pullup Enebled (Default)**
+- **SPI Pullup Enabled (Default)**
 
 
 
-The defaults are shown on below image.
+The defaults are shown in the below image.
 
-![Display-Type-B](https://github.com/Chamil1983/GTEM-Grid-Tie-Energy-Monitor/blob/main/Datasheets%20and%20Information/GTEM%20Power%20Energy%20Monitor%20Board%20Overview.jpg?raw=true)
+![Display-Type-B](Main_Board.jpg?raw=true)
 
 
 **ESP32 GPIO Configuration**
@@ -88,7 +85,7 @@ The defaults are shown on below image.
 
 ------------
 
-The below GPIO must be in the following states when ESP32 boots, or it will fail to boot.
+The below GPIO must be in the following states when ESP32 boots or it will fail to boot.
 
 - GP0	High
 - GP3	High
@@ -98,9 +95,6 @@ The below GPIO must be in the following states when ESP32 boots, or it will fail
 
 
 
-Further information can be found:
-
-- **GitHub**  https://github.com/Chamil1983/
 
 
 
