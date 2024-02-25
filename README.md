@@ -7,11 +7,13 @@ GTEM Overview
 ![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/blob/main/Pictures/IMG_4206.jpg?raw=true)
 ![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/blob/main/Pictures/IMG_4207.jpg?raw=true)
 
-**DitroniX.net Power Energy Monitor Boards SDK Overview**
-![Display-Type-B](https://ditronix.net/wp-content/uploads/2023/08/DitroniX.net-Power-Energy-Monitor-Boards-SDK-Overview-scaled.jpg?raw=true)
+**FE102M Power Energy Monitor Board SDK Overview**
+
+**FE102M Main Board**
+![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/blob/main/Pictures/Main Board.jpg?raw=true)
 
 
-The SM Energy FE102M Energy Monitor has main features:
+**The SM Energy FE102M Energy Monitor has the main features:**
 
 ESP32 WROOM 32 -Wireless and Bluetooth
 ATM90E26 (Energy Monitor) Metering Features:
