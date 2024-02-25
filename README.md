@@ -10,7 +10,10 @@ GTEM Overview
 **FE102M Power Energy Monitor Board SDK Overview**
 
 **FE102M Main Board**
-![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/blob/main/Pictures/Main Board.jpg?raw=true)
+![Display-Type-B](Main_Board.jpg?raw=true)
+
+**FE102M Front LCD Board**
+![Display-Type-B](Front_Panel.jpg?raw=true)
 
 
 **The SM Energy FE102M Energy Monitor has the main features:**
