@@ -2,7 +2,7 @@
 
 
 GTEM Overview
-![Display-Type-B](https://github.com/DitroniX/GTEM-Grid-Tie-Energy-Monitor/blob/main/Datasheets%20and%20Information/GTEM%20Power%20Energy%20Monitor%20Board%20Overview.jpg?raw=true)
+![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/tree/main/Pictures/IMG_4226?raw=true)
 
 GTEM 'What Is In The Shipping Box'
 ![Display-Type-B](https://ditronix.net/wp-content/uploads/2023/07/GTEM-ESP32-ATM90E26-In-The-Box-scaled.jpg?raw=true)
