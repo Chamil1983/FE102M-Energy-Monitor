@@ -18,35 +18,34 @@ GTEM Overview
 
 **The SM Energy FE102M Energy Monitor has the main features:**
 
-ESP32 WROOM 32 -Wireless and Bluetooth
+- ESP32 WROOM 32 -Wireless and Bluetooth
 ATM90E26 (Energy Monitor) Metering Features:
-Metering features are fully in compliance with the requirements of IEC62052-11, IEC62053-21, and IEC62053-23.
-Interrupts connected to ESP32 Active Energy pulse interrupt, Reactive Energy pulse interrupt, WarnOut fault interrupt, Voltage/Current Zero Crossing interrupt.
-Accuracy of ±0.1% for active energy and ±0.2% for reactive energy over a dynamic range of 6000:1.
-The temperature coefficient is 6 ppm/ ℃ (typ.) for on-chip reference voltage. Automatically temperature compensated.
-Single-point calibration on each phase over the whole dynamic range for active energy; no calibration is needed for reactive/ apparent energy. 
-Flexible piece-wise non-linearity compensation: three current (RMS value)-based segments with two programmable thresholds for each phase. Independent gain and phase angle compensation for each segment. 
-Electrical parameters measurement: less than ±0.5% fiducial error for Vrms, Irms, mean active/ reactive/ apparent power, frequency, power factor, and phase angle. 
-Active (forward/reverse), reactive (forward/reverse), apparent energy with independent energy registers. • Programmable startup and no-load power thresholds
-24C256 EEPROM (I2C)
-I2C 20X4 LCD Module 
-Current Clamp Input
-Compatible CT clamps (20A/25mA SCT-006, 30A/1V SCT-013-030 (JP1 and JP2 jumper Should be Open) ,50A/1V SCT-013-050 (JP1 and JP2  jumper Should be Open), 80A/26.6mA SCT-010,100A/50mA SCT-013-000,120A/40mA: SCT-016,200A/100mA SCT-024, 200A/50mA SCT-024)
-AC Low Voltage Input (Voltage < 250V)
-Arduino ESP32 Flashing and Programming Compatibility
-OPTO Outputs
-Meter Active and Reactive Energy pulse
-On Board DHT22 Temperature and Humidity Sensor
-Reset Button
-MODBUS Connectivity
-2 X User GPIO (SET and MODE User Programmable Button)
-Meter status LEDs and Power LED.
-Meter designed to Auto/Manual program and serial communication through a USB interface. 
-Size 150mm x 105mm x 35mm
-    
-![Display-Type-B](https://ditronix.net/wp-content/uploads/2023/01/GTEM-ESP32-ATM90E26-Enery-Monitor-Connections.jpg?raw=true)    
+- Metering features are fully in compliance with the requirements of IEC62052-11, IEC62053-21, and IEC62053-23.
+- Interrupts connected to ESP32 Active Energy pulse interrupt, Reactive Energy pulse interrupt, WarnOut fault interrupt, Voltage/Current Zero Crossing interrupt.
+- Accuracy of ±0.1% for active energy and ±0.2% for reactive energy over a dynamic range of 6000:1.
+- The temperature coefficient is 6 ppm/ ℃ (typ.) for on-chip reference voltage. Automatically temperature compensated.
+- Single-point calibration on each phase over the whole dynamic range for active energy; no calibration is needed for reactive/ apparent energy. 
+- Flexible piece-wise non-linearity compensation: three current (RMS value)-based segments with two programmable thresholds for each phase. Independent gain and phase angle compensation for each segment. 
+- Electrical parameters measurement: less than ±0.5% fiducial error for Vrms, Irms, mean active/ reactive/ apparent power, frequency, power factor, and phase angle. 
+- Active (forward/reverse), reactive (forward/reverse), apparent energy with independent energy registers. • Programmable startup and no-load power thresholds
+- 24C256 EEPROM (I2C)
+- I2C 20X4 LCD Module 
+- Current Clamp Input
+**Compatible CT clamps (20A/25mA SCT-006, 30A/1V SCT-013-030 (JP1 and JP2 jumper Should be Open) ,50A/1V SCT-013-050 (JP1 and JP2  jumper Should be Open), 80A/26.6mA SCT-010,100A/50mA SCT-013-000,120A/40mA: SCT-016,200A/100mA SCT-024, 200A/50mA SCT-024)**
+- AC Low Voltage Input (Voltage < 250V)
 
-Remember!
+- **Arduino ESP32 Flashing and Programming Compatibility**
+- OPTO Outputs
+**Meter Active and Reactive Energy pulse**
+- On Board DHT22 Temperature and Humidity Sensor
+- Reset Button
+- **MODBUS and WiFi Connectivity**
+- 2 X User GPIO (SET and MODE User Programmable Button)
+- Meter status LEDs and Power LED.
+- Meter designed to Auto/Manual program and serial communication through a USB interface. 
+- Size 150mm x 105mm x 35mm
+    
+**Remember!**
 - Our SDKs for the ESP32 Dev module are fully compatible with Arduino IDE
 - Set the BOARD to ESP32 Dev Module, 'WEMOS D1 MINI ESP32' DEV Module (or similar).
 - You can also set the BAUD rate to 921600 to speed up flashing.
