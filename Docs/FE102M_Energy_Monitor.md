@@ -1,6 +1,6 @@
 # FE102M Energy Monitor
 
-![License](https://img.shields.io/github/license/Chamil1983/FE102M-Energy-Monitor)
+![License](https://img.shields.io/github/license/Chamil1983/FE102M-Energy-Monitor/LICENSE)
 ![Stars](https://img.shields.io/github/stars/Chamil1983/FE102M-Energy-Monitor)
 ![Forks](https://img.shields.io/github/forks/Chamil1983/FE102M-Energy-Monitor)
 ![Issues](https://img.shields.io/github/issues/Chamil1983/FE102M-Energy-Monitor)
