@@ -22,7 +22,7 @@
 
 The SM Energy FE102M is a high-precision energy monitoring solution built around the ESP32 microcontroller and ATM90E26 energy monitoring IC. This repository contains the Arduino library, documentation, and example code for working with the FE102M Energy Monitor.
 
-## Features
+## ✨ Key Features
 
 - **High Accuracy Energy Measurement**: ±0.1% for active energy and ±0.2% for reactive energy over a dynamic range of 6000:1
 - **Comprehensive Metering**: Voltage, current, power (active, reactive, apparent), power factor, frequency, and energy
@@ -52,20 +52,20 @@ The SM Energy FE102M is a high-precision energy monitoring solution built around
 
 ## Getting Started
 
-### Hardware Requirements
+## 🛠️ Hardware Requirements
 
 - SM Energy FE102M Energy Monitor
 - Compatible CT clamp (SCT-013-000, SCT-006, etc.)
 - 9-12V DC power supply
 - USB cable (for programming and debugging)
 
-### Software Requirements
+## 💻 Software Requirements
 
 - [Arduino IDE](https://www.arduino.cc/en/software)
 - ESP32 board support
 - FE102M library (this repository)
 
-### Installation
+## 🚀 Installation
 
 1. Install the [Arduino IDE](https://www.arduino.cc/en/software)
 2. Add ESP32 board support to Arduino IDE:
@@ -187,7 +187,7 @@ FE102M-Energy-Monitor/
 └── README.md                  # This file
 ```
 
-## Contributing
+## 🤝 Contributing
 
 Contributions to the FE102M Energy Monitor project are welcome! Please feel free to submit pull requests, create issues, or suggest improvements.
 
