@@ -129,18 +129,19 @@ void loop() {
 
 The repository includes several example sketches to demonstrate the use of the FE102M Energy Monitor:
 
-- [Basic Energy Monitoring](examples/FE102M_Basic_Example/FE102M_Basic_Example.ino): Simple reading of voltage, current, and power
-- [WiFi Data Logging](examples/FE102M_WiFi_Example/FE102M_WiFi_Example.ino): Send energy data to a web server via WiFi
-- [MODBUS Interface](examples/FE102M_MODBUS_Example/FE102M_MODBUS_Example.ino): Example for using the MODBUS communication
-- [Calibration](examples/FE102M_Calibration/FE102M_Calibration.ino): How to calibrate the energy monitor for maximum accuracy
+- [Basic Energy Monitoring](/Examples/FE102M_Basic_Example.ino): Simple reading of voltage, current, and power
+- [WiFi Data Logging](/Examples/FE102M_MODBUS_Example.ino): Send energy data to a web server via WiFi
+- [MODBUS Interface](/Examples/FE102M_WiFi_Example.ino): Example for using the MODBUS communication
+- [Calibration](/Docs/FE102M_Calibration_Guide.md): How to calibrate the energy monitor for maximum accuracy
 
 ## Documentation
 
-- [API Reference](docs/API_Reference.md): Complete library API documentation
-- [Calibration Guide](Docs/FE102M_Calibration_Guide.md): Detailed instructions for calibrating the FE102M
+- [API Reference](/Docs/User_Manual.pdf): Complete library API documentation
+- [Calibration Guide](/Docs/FE102M_Calibration_Guide.md): Detailed instructions for calibrating the FE102M
 - [ATM90E26 Datasheet](/Datasheets_Information/ATM90E26_Datasheet.pdf): Energy IC specifications
-- [Hardware Reference](docs/Hardware_Reference.md): Hardware details and pin mapping
-- [Web Interface Guide](docs/Web_Interface_Guide.md): Setting up and using the WiFi web interface
+- [Hardware Reference Main Board](/Pictures/ESP32_Confuguration.jpg): Hardware details and pin mapping
+- [Hardware Reference LCD Card](/Pictures/Front_Panel.jpg): Hardware details and pin mapping
+- [Web Interface Example](/Examples/index.html): Setting up and using the WiFi web interface
 
 ## Supported Current Transformers
 
