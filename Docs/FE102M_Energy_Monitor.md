@@ -106,7 +106,7 @@ The SM Energy FE102M Energy Monitor is a high-precision energy metering solution
 ### Software Setup
 
 1. Install the Arduino IDE (if not already installed).
-2. Add ESP32 board support to Arduino IDE by following [these instructions](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md).
+2. Add ESP32 board support to Arduino IDE by following [these instructions](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-board-manager/).
 3. Install required libraries:
    - ATM90E26 library
    - DHT sensor library
