@@ -196,15 +196,41 @@ Contributions to the FE102M Energy Monitor project are welcome! Please feel free
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📄 License
+This project is distributed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-This project is distributed under the MIT License. See the `LICENSE` file for more information.
+**Repository Folders**
 
-***
-**To buy this product please go to link below;**
-https://www.ebay.com/itm/364752632441?itmmeta=01HQFTH7M3MHXT4NJK38QJCGWM&hash=item54ecf37a79:g:GPYAAOSw1thl2nWW&itmprp=enc%3AAQAIAAAAoNAZ4YFZEGNemjINAiAc2TXCD%2FZ9bZbDn9b%2F6fbWSt6ACkSpT0qp2crkCRfwgh3qR9JtyJ0Z2Nsg27rwpCdgPi0evkEj%2BymLC0yI%2BM%2Frz4GUaUa2ZwZg1ha5jvhLDkzK1U4i2VcE2z2E0IoohdqPBfaUZbl7f2i6vejEGGpUZnrjYWwH5Pj7mhnDFA%2FkL3x7szatGkkJ6tqpZwT2gfWYA6A%3D%7Ctkp%3ABFBMpPrE-rtj
+ - **Code** *(Code examples for Arduino  IDE and Visual Studio)*
+ - **Datasheets and Information** *(Component Datasheets, Photos and Technical Documentation)*
+ - **Certification** *(Related Repository Project or Part, Certification Information)*
 
-We value our Customers, Users of our designs, and STEM Communities, all over the World. Should you have any other questions, or feedback to share with others, please feel free to:
+## ⚠️ Safety Warning
+
+Always ensure proper safety precautions when working with electrical systems. All electrical connections should be made by a qualified electrician in compliance with local regulations
+
+## 📧 Contact & Support
+- Purchase: [SM Energy FE102M on eBay](https://www.ebay.com/itm/364752632441)
+
+- Technical Support: Open an issue on this repository
+
+- Contact: Chamil Vithanage, Microcode Embedded Solutions, Australia
+
+For technical support, please contact MESA:
+
+- **Website:** [www.microcodeeng.com](https://www.microcodeeng.com)
+- **Email:** microcode-eng@outlook.com
+
+For issues related to this repository, please open an issue on GitHub.
+
+---
+© 2025 Microcode Embedded Solutions | Electronics Engineer | Software Developer | R&D Support
+
+<p align="center">
+  <img src="LOGO/MESA_logo.png" alt="MESA Logo" width="200"/><br>
+
+  <I align="center">Designed and manufactured by Microcode Embedded Systems and Automation (MESA)</i>
+</p>
 
 ***Chamil Vithanage, Microcode Embedded Solutions, Australia.***
 
