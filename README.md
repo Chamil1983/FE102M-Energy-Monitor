@@ -132,7 +132,7 @@ The repository includes several example sketches to demonstrate the use of the F
 - [Basic Energy Monitoring](/Examples/FE102M_Basic_Example.ino): Simple reading of voltage, current, and power
 - [WiFi Data Logging](/Examples/FE102M_MODBUS_Example.ino): Send energy data to a web server via WiFi
 - [MODBUS Interface](/Examples/FE102M_WiFi_Example.ino): Example for using the MODBUS communication
-- [Calibration](/Docs/FE102M_Calibration_Guide.md): How to calibrate the energy monitor for maximum accuracy
+- [Calibration](/Examples/FE102M_Calibration.ino): How to calibrate the energy monitor for maximum accuracy
 
 ## Documentation
 
