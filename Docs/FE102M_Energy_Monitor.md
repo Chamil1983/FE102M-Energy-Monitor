@@ -1,10 +1,5 @@
 # FE102M Energy Monitor
 
-![License](https://img.shields.io/github/license/Chamil1983/FE102M-Energy-Monitor/LICENSE)
-![Stars](https://img.shields.io/github/stars/Chamil1983/FE102M-Energy-Monitor)
-![Forks](https://img.shields.io/github/forks/Chamil1983/FE102M-Energy-Monitor)
-![Issues](https://img.shields.io/github/issues/Chamil1983/FE102M-Energy-Monitor)
-
 The SM Energy FE102M Energy Monitor is a high-precision energy metering solution built around the ESP32 WROOM 32 microcontroller and ATM90E26 energy monitoring IC. This repository contains documentation, code examples, and resources for working with the FE102M Energy Monitor.
 
 ## Table of Contents
