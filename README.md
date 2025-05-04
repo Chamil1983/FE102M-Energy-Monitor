@@ -6,13 +6,13 @@
 [![Home Assistant Compatible](https://img.shields.io/badge/Home_Assistant-Compatible-green.svg)](https://www.home-assistant.io/)
 [![Release Version](https://img.shields.io/badge/Release-v1.1.0-green.svg)](https://github.com/mesa-automation/cortex-link-a8r-m/releases)
 
-GTEM Overview
+**FE102M Power Energy Monitor Board SDK Overview**
 ![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/blob/main/Pictures/IMG_4226.jpg?raw=true)
 
 ![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/blob/main/Pictures/IMG_4206.jpg?raw=true)
 ![Display-Type-B](https://github.com/Chamil1983/FE102M-Energy-Monitor/blob/main/Pictures/IMG_4207.jpg?raw=true)
 
-**FE102M Power Energy Monitor Board SDK Overview**
+
 
 **FE102M Main Board**
 ![Display-Type-B](Main_Board.jpg?raw=true)
