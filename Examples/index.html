@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE102M Energy Monitor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #0066cc;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .card p {
+            margin: 8px 0;
+        }
+        .label {
+            font-weight: bold;
+            display: inline-block;
+            width: 140px;
+        }
+        .value {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .unit {
+            color: #666;
+            margin-left: 5px;
+        }
+        .chart-container {
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .update-time {
+            text-align: right;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+        .status {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .status.online {
+            background-color: #4CAF50;
+        }
+        .status.offline {
+            background-color: #f44336;
+        }
+        button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SM Energy FE102M Monitor</h1>
+        <div>
+            <span class="status online" id="connection-status"></span>
+            <span id="connection-text">Connected</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Power Metrics Card -->
+        <div class="card">
+            <h2>Power Metrics</h2>
+            <p><span class="label">Voltage:</span> <span id="voltage" class="value">--</span><span class="unit">V</span></p>
+            <p><span class="label">L Line Current:</span> <span id="lineCurrent" class="value">--</span><span class="unit">A</span></p>
+            <p><span class="label">N Line Current:</span> <span id="nLineCurrent" class="value">--</span><span class="unit">A</span></p>
+            <p><span class="label">Active Power:</span> <span id="activePower" class="value">--</span><span class="unit">W</span></p>
+            <p><span class="label">Reactive Power:</span> <span id="reactivePower" class="value">--</span><span class="unit">VAR</span></p>
+            <p><span class="label">Apparent Power:</span> <span id="apparentPower" class="value">--</span><span class="unit">VA</span></p>
+        </div>
+
+        <!-- Additional Metrics Card -->
+        <div class="card">
+            <h2>Power Quality</h2>
+            <p><span class="label">Power Factor:</span> <span id="powerFactor" class="value">--</span></p>
+            <p><span class="label">Frequency:</span> <span id="frequency" class="value">--</span><span class="unit">Hz</span></p>
+            <p><span class="label">Phase Angle:</span> <span id="phaseAngle" class="value">--</span><span class="unit">°</span></p>
+            <p><span class="label">Temperature:</span> <span id="temperature" class="value">--</span><span class="unit">°C</span></p>
+            <p><span class="label">Humidity:</span> <span id="humidity" class="value">--</span><span class="unit">%</span></p>
+            <p><span class="label">Heat Index:</span> <span id="heatIndex" class="value">--</span><span class="unit">°C</span></p>
+        </div>
+
+        <!-- Energy Consumption Card -->
+        <div class="card">
+            <h2>Energy Consumption</h2>
+            <p><span class="label">Import Energy:</span> <span id="importEnergy" class="value">--</span><span class="unit">kWh</span></p>
+            <p><span class="label">Export Energy:</span> <span id="exportEnergy" class="value">--</span><span class="unit">kWh</span></p>
+            <p><span class="label">Reactive Fwd:</span> <span id="reactiveFwd" class="value">--</span><span class="unit">kVARh</span></p>
+            <p><span class="label">Reactive Rev:</span> <span id="reactiveRev" class="value">--</span><span class="unit">kVARh</span></p>
+            <p><span class="label">Abs Active:</span> <span id="absActive" class="value">--</span><span class="unit">kWh</span></p>
+            <p><span class="label">Abs Reactive:</span> <span id="absReactive" class="value">--</span><span class="unit">kVARh</span></p>
+        </div>
+
+        <!-- Device Status Card -->
+        <div class="card">
+            <h2>Device Status</h2>
+            <p><span class="label">Operating Mode:</span> <span id="operatingMode" class="value">--</span></p>
+            <p><span class="label">IP Address:</span> <span id="ipAddress" class="value">--</span></p>
+            <p><span class="label">MAC Address:</span> <span id="macAddress" class="value">--</span></p>
+            <p><span class="label">Signal Strength:</span> <span id="rssi" class="value">--</span><span class="unit">dBm</span></p>
+            <p><span class="label">Uptime:</span> <span id="uptime" class="value">--</span><span class="unit">seconds</span></p>
+            <p><span class="label">Meter Status:</span> <span id="meterStatus" class="value">--</span></p>
+            <button id="refreshButton">Refresh Data</button>
+        </div>
+    </div>
+
+    <!-- Power Chart Section -->
+    <div class="card">
+        <h2>Power Consumption Chart</h2>
+        <div class="chart-container" id="powerChart"></div>
+        <p class="update-time">Last updated: <span id="lastUpdate">--</span></p>
+    </div>
+
+    <div class="footer">
+        <p>SM Energy FE102M Energy Monitor - © Microcode Embedded Solutions</p>
+    </div>
+
+    <!-- Include Chart.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    
+    <script>
+        // Chart data and configuration
+        const ctx = document.getElementById('powerChart').getContext('2d');
+        const powerData = {
+            labels: Array(30).fill('').map((_, i) => i),
+            datasets: [
+                {
+                    label: 'Active Power (W)',
+                    data: Array(30).fill(0),
+                    borderColor: '#4CAF50',
+                    backgroundColor: 'rgba(76, 175, 80, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                },
+                {
+                    label: 'Reactive Power (VAR)',
+                    data: Array(30).fill(0),
+                    borderColor: '#2196F3',
+                    backgroundColor: 'rgba(33, 150, 243, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }
+            ]
+        };
+        
+        const powerChart = new Chart(ctx, {
+            type: 'line',
+            data: powerData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Power'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Time (seconds)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Function to update chart with new data
+        function updateChart(activePower, reactivePower) {
+            // Remove first data point and add new one at the end
+            powerChart.data.datasets[0].data.shift();
+            powerChart.data.datasets[0].data.push(activePower);
+            
+            powerChart.data.datasets[1].data.shift();
+            powerChart.data.datasets[1].data.push(reactivePower);
+            
+            powerChart.update();
+        }
+
+        // Function to fetch data from API
+        async function fetchData() {
+            try {
+                // Fetch readings
+                const readingsResponse = await fetch('/api/readings');
+                const readingsData = await readingsResponse.json();
+                
+                // Update UI with readings
+                document.getElementById('voltage').textContent = readingsData.voltage.toFixed(1);
+                document.getElementById('lineCurrent').textContent = readingsData.lineCurrent.toFixed(3);
+                document.getElementById('nLineCurrent').textContent = readingsData.nLineCurrent.toFixed(3);
+                document.getElementById('activePower').textContent = readingsData.activePower.toFixed(1);
+                document.getElementById('reactivePower').textContent = readingsData.reactivePower.toFixed(1);
+                document.getElementById('apparentPower').textContent = readingsData.apparentPower.toFixed(1);
+                document.getElementById('powerFactor').textContent = readingsData.powerFactor.toFixed(3);
+                document.getElementById('frequency').textContent = readingsData.frequency.toFixed(2);
+                document.getElementById('phaseAngle').textContent = readingsData.phaseAngle.toFixed(1);
+                document.getElementById('temperature').textContent = readingsData.temperature.toFixed(1);
+                document.getElementById('humidity').textContent = readingsData.humidity.toFixed(1);
+                document.getElementById('heatIndex').textContent = readingsData.heatIndex.toFixed(1);
+                document.getElementById('importEnergy').textContent = readingsData.importEnergy.toFixed(3);
+                document.getElementById('exportEnergy').textContent = readingsData.exportEnergy.toFixed(3);
+                
+                // For reactive energy, use placeholders until they're added to the API
+                document.getElementById('reactiveFwd').textContent = '0.000';
+                document.getElementById('reactiveRev').textContent = '0.000';
+                document.getElementById('absActive').textContent = '0.000';
+                document.getElementById('absReactive').textContent = '0.000';
+                
+                // Update chart
+                updateChart(readingsData.activePower, readingsData.reactivePower);
+                
+                // Update last update time
+                const now = new Date();
+                document.getElementById('lastUpdate').textContent = now.toLocaleTimeString();
+                
+                // Connection status
+                document.getElementById('connection-status').className = 'status online';
+                document.getElementById('connection-text').textContent = 'Connected';
+                
+                // Fetch status
+                const statusResponse = await fetch('/api/status');
+                const statusData = await statusResponse.json();
+                
+                // Update UI with status
+                document.getElementById('operatingMode').textContent = statusData.operatingMode;
+                document.getElementById('ipAddress').textContent = statusData.ipAddress;
+                document.getElementById('macAddress').textContent = statusData.macAddress;
+                document.getElementById('rssi').textContent = statusData.rssi;
+                document.getElementById('uptime').textContent = statusData.uptime;
+                document.getElementById('meterStatus').textContent = statusData.meterStatus;
+                
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('connection-status').className = 'status offline';
+                document.getElementById('connection-text').textContent = 'Disconnected';
+            }
+        }
+
+        // Initialize data and set interval for updates
+        fetchData();
+        setInterval(fetchData, 5000); // Update every 5 seconds
+        
+        // Refresh button handler
+        document.getElementById('refreshButton').addEventListener('click', fetchData);
+    </script>
+</body>
+</html>
