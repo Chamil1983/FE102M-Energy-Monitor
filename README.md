@@ -158,9 +158,9 @@ The FE102M Energy Monitor is compatible with the following CT clamps:
 | SCT-024 | 200A/100mA | JP1 and JP2 shorted |
 | SCT-024 | 200A/50mA | JP1 and JP2 shorted |
 
-**Note**: JP1 and JP2 jumpers configuration determines whether the CT input is configured for current output or voltage output sensors. Refer to the documentation for proper settings.
+**Note**: JP1 and JP2 jumper configuration determines whether the CT input is configured for current output or voltage output sensors. Refer to the documentation for proper settings.
 
-## Repository Structure
+## 🔍 Repository Structure
 
 ```
 FE102M-Energy-Monitor/
