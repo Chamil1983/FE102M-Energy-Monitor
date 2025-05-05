@@ -6,7 +6,7 @@
 The SM Energy FE102M is a high-precision energy monitoring solution built around the ESP32 microcontroller and ATM90E26 energy monitoring IC. This repository contains the Arduino library, documentation, and example code for working with the FE102M Energy Monitor.
 
 <p align="center">
-  <img src="docs/images/FE102M_product.jpg" alt="FE102M Energy Monitor" width="500"/>
+  <img src="/Pictures/IMG_4226.jpg" alt="FE102M Energy Monitor" width="500"/>
 </p>
 
 ## Features
